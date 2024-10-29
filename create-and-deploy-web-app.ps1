@@ -1,10 +1,10 @@
 # Variables
-$resourceGroupName = "powershell-testing"  # Change this to your desired Resource Group
-$location = "UKSouth"                    # Change this to your desired location
-$appServicePlan = "myAppServicePlan"    # Change this to your desired App Service Plan name
-$webAppName = "myspecialdrumkit123"      # Change this to your desired web app name (must be globally unique)
-$gitRepoURL = "https://github.com/Mark-Halstead/Drum-kit.git"  # Replace with your GitHub repository URL
-$branch = "main"                        # Branch to deploy from
+$resourceGroupName = "powershell-testing"  
+$location = "UKSouth"                 
+$appServicePlan = "myAppServicePlan"   
+$webAppName = "myspecialdrumkit123"   
+$gitRepoURL = "https://github.com/Mark-Halstead/Drum-kit.git"  
+$branch = "main" 
 
 # Check if the resource group exists, if not create it
 $resourceGroup = Get-AzResourceGroup -Name $resourceGroupName -ErrorAction SilentlyContinue
