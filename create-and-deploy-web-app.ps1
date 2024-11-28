@@ -1,10 +1,10 @@
-# Variables
-$resourceGroupName = "powershell-testing"  
-$location = "UKSouth"                 
-$appServicePlan = "myAppServicePlan"   
-$webAppName = "myspecialdrumkit123"   
-$gitRepoURL = "https://github.com/Mark-Halstead/Drum-kit.git"  
-$branch = "main" 
+# variables
+$resourceGroupName = Read-Host "enter rg name:"  
+$location = Read-Host "enter location"                 
+$appServicePlan = Read-Host "enter app service plan"   
+$webAppName = Read-Host "enter web app name"   
+$gitRepoURL = Read-Host "enter git repository url:"  
+$branch = Read-Host "enter branch of repo you want to deploy:" 
 
 # Check if the resource group exists, if not create it
 $resourceGroup = Get-AzResourceGroup -Name $resourceGroupName -ErrorAction SilentlyContinue
